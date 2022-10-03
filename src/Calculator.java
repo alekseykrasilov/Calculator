@@ -12,7 +12,7 @@ public class Calculator {
         String znak = String.valueOf(primerSort[1]);
         String var2 = String.valueOf(primerSort[2]);
 
-        if (primerSort.length > 3) throw new Exception("Должна быть одна операнда и две переменных");
+        if (primerSort.length > 3) throw new Exception("Р”РѕР»Р¶РЅР° Р±С‹С‚СЊ РѕРґРЅР° РѕРїРµСЂР°РЅРґР° Рё РґРІРµ РїРµСЂРµРјРµРЅРЅС‹С…");
 
         List<String> rim = List.of("I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X");
         List<String> arab = List.of("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10");
@@ -28,12 +28,12 @@ public class Calculator {
             if (a > 0) {
                 ArabToRoman.arabToRoman(a);
             } else {
-                throw new Exception("Только положительные числа для римских");
+                throw new Exception("РўРѕР»СЊРєРѕ РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹Рµ С‡РёСЃР»Р° РґР»СЏ СЂРёРјСЃРєРёС…");
             }
         } else if (arab.contains(var1) & (rim.contains(var2)) | (rim.contains(var1) & arab.contains(var2))) {
-            throw new Exception("Либо только арабские, либо только римские");
+            throw new Exception("Р›РёР±Рѕ С‚РѕР»СЊРєРѕ Р°СЂР°Р±СЃРєРёРµ, Р»РёР±Рѕ С‚РѕР»СЊРєРѕ СЂРёРјСЃРєРёРµ");
         } else {
-            throw new Exception("Неподходящие числа");
+            throw new Exception("РќРµРїРѕРґС…РѕРґСЏС‰РёРµ С‡РёСЃР»Р°");
         }
     }
 }

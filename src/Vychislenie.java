@@ -1,5 +1,5 @@
 public class Vychislenie {
-    public static int OperArab(int chislo1, int chislo2, String znak) throws Exception {
+    public static int schetArab(int chislo1, int chislo2, String znak) throws Exception {
         int result = 0;
         switch (znak) {
             case "+":
